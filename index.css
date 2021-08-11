@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap");
+p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+h1,
+h2,
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+h4,
+h5,
+h6 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+.container {
+  padding: 0;
+  margin: 0;
+}
+#landingPageImg {
+  max-width: 100vw;
+}
+@media only screen and (max-width: 600px) {
+  #landingPage{
+    font-size: 4px;
+  }
+}
+@media only screen and (min-width: 600px) {
+  #landingPage{
+    font-size: 4px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #landingPage{
+    font-size: 6px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #landingPage{
+    font-size: 10px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #landingPage{
+    font-size: 16px;
+  }
+}
+/* Navbar */
+
+/*Landing Page*/
+#jorge {
+  font-size: calc(500% + 1vw + 1vh);
+  color: white;
+  margin-top: -100vh;
+  margin-left: 5vw;
+}
+#hora {
+  font-size: calc(500% + 1vw + 1vh);
+  color: white;
+  margin-top: 3vh;
+  margin-left: 15vw;
+}
+#santos {
+  font-size: calc(500% + 1vw + 1vh);
+  color: white;
+  margin-top: 3vh;
+  margin-left: 22vw;
+}
+#servicos {
+  font-size: calc(400% + 1vw + 1vh);
+  color: white;
+  margin-top: 4vh;
+  margin-left: 52vw;
+}
+#agricolas {
+  font-size: calc(400% + 1vw + 1vh);
+  color: white;
+  margin-top: 4vh;
+  margin-left: 60vw;
+}
+
