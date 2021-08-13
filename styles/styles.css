@@ -1,0 +1,540 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap");
+/* Navbar */
+/* Navbar */
+#navContactBtn {
+  color: white;
+  background-color: #FFC02E;
+  -webkit-box-shadow: 5px 0px 5px 5px rgba(128, 128, 128, 0.5);
+          box-shadow: 5px 0px 5px 5px rgba(128, 128, 128, 0.5);
+  border-radius: 5px;
+  margin-left: 40vw;
+}
+
+/*Landing Page*/
+/* RESPOND ABOVE */
+/*RESPOND BELOW */
+/* @include respond-below(sm) {} */
+/* RESPOND BETWEEN */
+/*@include respond-between(sm, md) {} */
+/* Media Queries Model */
+/* 
+@include respond-below(xs){
+
+}
+
+@include respond-above (xs){
+
+}
+
+@include respond-above(sm){
+
+}
+
+@include respond-above(md){
+
+}
+
+@include respond-above (lg){
+
+} 
+*/
+#landingPageSc {
+  background-image: url(../ASSETS/trator.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+#jorge,
+#hora,
+#santos {
+  font-size: calc(500% + 1vw + 1vh);
+  color: white;
+}
+
+#servicos,
+#agricolas {
+  font-size: calc(500% + 1vw + 1vh);
+  color: white;
+  font-size: calc(400% + 1vw + 1vh);
+}
+
+@media (max-width: 575px) {
+  #landingPageSc {
+    font-size: 10px;
+    padding-top: 15vh;
+    padding-left: 10vw;
+    font-size: 10px;
+    background-image: url(../ASSETS/trator.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+  }
+  #landingPageSc #servicos {
+    margin-top: 5vh;
+  }
+}
+
+@media (min-width: 576px) {
+  #landingPageSc {
+    font-size: 14px;
+    background-image: url(../ASSETS/trator.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+  }
+}
+
+@media (min-width: 768px) {
+  #landingPageSc {
+    padding-top: 15vh;
+    padding-left: 5vw;
+    background-image: url(../ASSETS/trator.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+  }
+  #landingPageSc #servicos {
+    text-align: end;
+    margin-top: 5vh;
+    margin-right: 10vw;
+  }
+  #landingPageSc #agricolas {
+    margin-right: 4vw;
+    text-align: end;
+  }
+}
+
+@media (min-width: 992px) {
+  #landingPageSc {
+    background-image: url(../ASSETS/trator.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+  }
+  #hora {
+    margin-left: 11vw;
+  }
+  #santos {
+    margin-left: 18vw;
+  }
+  #servicos {
+    margin-right: 20vw;
+  }
+  #agricolas {
+    margin-right: 6vw;
+  }
+}
+
+@media (min-width: 1200px) {
+  #landingPageSc {
+    background-image: url(../ASSETS/trator.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+  }
+  #landingPageSc #hora {
+    margin-left: 10vw;
+  }
+  #landingPageSc #santos {
+    margin-left: 16vw;
+  }
+  #landingPageSc #servicos {
+    margin-right: 22vw;
+  }
+  #landingPageSc #agricolas {
+    margin-right: 9vw;
+  }
+}
+
+/* About Us Page */
+#aboutUsSc {
+  background-image: url(../ASSETS/scott-goodwill-CtRE4_4L7b8-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+@media (max-width: 575px) {
+  #aboutUsSc {
+    background-image: url(../ASSETS/scott-goodwill-CtRE4_4L7b8-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+  }
+}
+
+@media (min-width: 576px) {
+  #aboutUsSc {
+    background-image: url(../ASSETS/scott-goodwill-CtRE4_4L7b8-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+  }
+}
+
+@media (min-width: 768px) {
+  #aboutUsSc {
+    background-image: url(../ASSETS/scott-goodwill-CtRE4_4L7b8-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+  }
+}
+
+@media (min-width: 992px) {
+  #aboutUsSc {
+    background-image: url(../ASSETS/scott-goodwill-CtRE4_4L7b8-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+  }
+}
+
+@media (min-width: 1200px) {
+  #aboutUsSc {
+    background-image: url(../ASSETS/scott-goodwill-CtRE4_4L7b8-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+  }
+}
+
+/* Team Page */
+/* RESPOND ABOVE */
+/*RESPOND BELOW */
+/* @include respond-below(sm) {} */
+/* RESPOND BETWEEN */
+/*@include respond-between(sm, md) {} */
+/* Media Queries Model */
+/* 
+@include respond-below(xs){
+
+}
+
+@include respond-above (xs){
+
+}
+
+@include respond-above(sm){
+
+}
+
+@include respond-above(md){
+
+}
+
+@include respond-above (lg){
+
+} 
+*/
+#teamSc {
+  text-align: center;
+  background-image: url(../ASSETS/teamBackground.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  padding-top: 15vh;
+}
+
+#team {
+  margin: 0 auto 0 auto;
+  border-radius: 13px;
+  height: 80vh;
+  width: 80vw;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+#team .teamImg {
+  padding-left: 3vw;
+}
+
+#team .cargo {
+  color: white;
+  background-color: #092114;
+  background-size: 10%;
+  height: 20vh;
+}
+
+#team .cargo p {
+  font-size: 3rem;
+  padding-top: 2vh;
+}
+
+@media (max-width: 575px) {
+  #teamSc {
+    text-align: center;
+    background-image: url(../ASSETS/teamBackground.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+  }
+}
+
+@media (min-width: 576px) {
+  #teamSc {
+    text-align: center;
+    background-image: url(../ASSETS/teamBackground.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+  }
+}
+
+@media (min-width: 768px) {
+  #teamSc {
+    text-align: center;
+    background-image: url(../ASSETS/teamBackground.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+  }
+}
+
+@media (min-width: 992px) {
+  #teamSc {
+    text-align: center;
+    background-image: url(../ASSETS/teamBackground.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+  }
+}
+
+@media (min-width: 1200px) {
+  #teamSc {
+    text-align: center;
+    background-image: url(../ASSETS/teamBackground.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+  }
+}
+
+/* Services Page */
+/* RESPOND ABOVE */
+/*RESPOND BELOW */
+/* @include respond-below(sm) {} */
+/* RESPOND BETWEEN */
+/*@include respond-between(sm, md) {} */
+/* Media Queries Model */
+/* 
+@include respond-below(xs){
+
+}
+
+@include respond-above (xs){
+
+}
+
+@include respond-above(sm){
+
+}
+
+@include respond-above(md){
+
+}
+
+@include respond-above (lg){
+
+} 
+*/
+#servicesSc {
+  background-image: url(../ASSETS/scott-goodwill-CtRE4_4L7b8-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+@media (max-width: 575px) {
+  #servicesSc {
+    background-image: url(../ASSETS/scott-goodwill-CtRE4_4L7b8-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+  }
+}
+
+@media (min-width: 576px) {
+  #servicesSc {
+    background-image: url(../ASSETS/scott-goodwill-CtRE4_4L7b8-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+  }
+}
+
+@media (min-width: 768px) {
+  #servicesSc {
+    background-image: url(../ASSETS/scott-goodwill-CtRE4_4L7b8-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+  }
+}
+
+@media (min-width: 992px) {
+  #servicesSc {
+    background-image: url(../ASSETS/scott-goodwill-CtRE4_4L7b8-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+  }
+}
+
+@media (min-width: 1200px) {
+  #servicesSc {
+    background-image: url(../ASSETS/scott-goodwill-CtRE4_4L7b8-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+  }
+}
+
+/* Contacts page */
+/* RESPOND ABOVE */
+/*RESPOND BELOW */
+/* @include respond-below(sm) {} */
+/* RESPOND BETWEEN */
+/*@include respond-between(sm, md) {} */
+/* Media Queries Model */
+/* 
+@include respond-below(xs){
+
+}
+
+@include respond-above (xs){
+
+}
+
+@include respond-above(sm){
+
+}
+
+@include respond-above(md){
+
+}
+
+@include respond-above (lg){
+
+} 
+*/
+#contactsSc {
+  background-image: url(../ASSETS/scott-goodwill-CtRE4_4L7b8-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+@media (max-width: 575px) {
+  #contactsSc {
+    background-image: url(../ASSETS/scott-goodwill-CtRE4_4L7b8-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+  }
+}
+
+@media (min-width: 576px) {
+  #contactsSc {
+    background-image: url(../ASSETS/scott-goodwill-CtRE4_4L7b8-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+  }
+}
+
+@media (min-width: 768px) {
+  #contactsSc {
+    background-image: url(../ASSETS/scott-goodwill-CtRE4_4L7b8-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+  }
+}
+
+@media (min-width: 992px) {
+  #contactsSc {
+    background-image: url(../ASSETS/scott-goodwill-CtRE4_4L7b8-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+  }
+}
+
+@media (min-width: 1200px) {
+  #contactsSc {
+    background-image: url(../ASSETS/scott-goodwill-CtRE4_4L7b8-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body .container {
+  padding: 0;
+  margin: 0;
+}
+
+body .container h1,
+body .container h2,
+body .container h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+body .container h4,
+body .container h5,
+body .container h6 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+body .container p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+/*# sourceMappingURL=styles.css.map */

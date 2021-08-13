@@ -1,0 +1,42 @@
+$aboutUsBck: url(../ASSETS/scott-goodwill-CtRE4_4L7b8-unsplash.jpg);
+@mixin aboutUsStyles{
+    background-image: $aboutUsBck;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+#aboutUsSc {
+       @include aboutUsStyles(); 
+}
+
+@include respond-below(xs) {
+    #aboutUsSc {
+        @include aboutUsStyles(); 
+ }
+}
+
+@include respond-above(xs) {
+    #aboutUsSc {
+        @include aboutUsStyles(); 
+ }
+}
+
+@include respond-above(sm) {
+    #aboutUsSc {
+        @include aboutUsStyles(); 
+ }
+}
+
+@include respond-above(md) {
+    #aboutUsSc {
+        @include aboutUsStyles(); 
+ }
+}
+
+
+@include respond-above(lg) {
+    #aboutUsSc {
+        @include aboutUsStyles(); 
+ }
+}
