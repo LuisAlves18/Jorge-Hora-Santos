@@ -38,17 +38,10 @@ $teampageBck: url(../ASSETS/teamBackground.png);
   }
 }
 
-@include respond-below(xs) {
+@include respond-below(sm) {
     #teamSc{
         @include teamPageStyles();
 
-    }
-}
-
-@include respond-above(xs) {
-    #teamSc{
-        @include teamPageStyles();
-         
     }
 }
 
@@ -66,8 +59,15 @@ $teampageBck: url(../ASSETS/teamBackground.png);
     }
 }
 
-
 @include respond-above(lg) {
+    #teamSc{
+        @include teamPageStyles();
+         
+    }
+}
+
+
+@include respond-above(xl) {
     #teamSc{
         @include teamPageStyles();
          

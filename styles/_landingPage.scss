@@ -27,7 +27,7 @@ $landingPageBck: url(../ASSETS/trator.webp);
   font-size: calc(400% + 1vw + 1vh);
 }
 
-@include respond-below(xs) {
+@include respond-below(sm) {
   #landingPageSc {
     font-size: 10px;
     padding-top: 15vh;
@@ -39,13 +39,17 @@ $landingPageBck: url(../ASSETS/trator.webp);
     }
   }
 }
-@include respond-above(xs) {
+@include respond-above(sm) {
   #landingPageSc {
     font-size: 14px;
     @include landingPageStyles();
+    padding-left:10vw;
+    #jorge{
+      padding-top: 10vh;
+    }
   }
 }
-@include respond-above(sm) {
+@include respond-above(md) {
   #landingPageSc {
     padding-top: 15vh;
     padding-left: 5vw;
@@ -61,7 +65,7 @@ $landingPageBck: url(../ASSETS/trator.webp);
     }
   }
 }
-@include respond-above(md) {
+@include respond-above(lg) {
   #landingPageSc {
     @include landingPageStyles;
   }
@@ -78,7 +82,7 @@ $landingPageBck: url(../ASSETS/trator.webp);
     margin-right: 6vw;
   }
 }
-@include respond-above(lg) {
+@include respond-above(xl) {
   #landingPageSc {
     @include landingPageStyles;
     #hora {

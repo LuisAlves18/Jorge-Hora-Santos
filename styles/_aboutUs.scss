@@ -10,13 +10,7 @@ $aboutUsBck: url(../ASSETS/scott-goodwill-CtRE4_4L7b8-unsplash.jpg);
        @include aboutUsStyles(); 
 }
 
-@include respond-below(xs) {
-    #aboutUsSc {
-        @include aboutUsStyles(); 
- }
-}
-
-@include respond-above(xs) {
+@include respond-below(sm) {
     #aboutUsSc {
         @include aboutUsStyles(); 
  }
@@ -34,8 +28,14 @@ $aboutUsBck: url(../ASSETS/scott-goodwill-CtRE4_4L7b8-unsplash.jpg);
  }
 }
 
-
 @include respond-above(lg) {
+    #aboutUsSc {
+        @include aboutUsStyles(); 
+ }
+}
+
+
+@include respond-above(xl) {
     #aboutUsSc {
         @include aboutUsStyles(); 
  }
