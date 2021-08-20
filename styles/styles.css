@@ -1,7 +1,42 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap");
 /* Navbar */
-/* @import "../styles/navbar";
+/* Navbar */
+#navContactBtn {
+  background-color: #FFC02E;
+  color: white;
+  -webkit-box-shadow: 5px 0px 5px 5px rgba(128, 128, 128, 0.5);
+          box-shadow: 5px 0px 5px 5px rgba(128, 128, 128, 0.5);
+  border-radius: 5px;
+  margin-left: 40vw;
+}
+
+.nav-item1 {
+  color: white;
+}
+
+.nav-item1:hover {
+  color: white;
+}
+
+.nav-item1:after {
+  content: "";
+  position: absolute;
+  display: block;
+  border: 0.3vh solid #FFC02E;
+  background-color: #FFC02E;
+  width: 5vw;
+  height: 0%;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  top: 100%;
+}
+
+.nav-item1:hover::after {
+  color: white;
+  width: 5vw;
+  top: 0;
+}
 
 /*Landing Page*/
 /* RESPOND ABOVE */
@@ -141,6 +176,7 @@
     background-position: center;
     height: 100vh;
     width: 100vw;
+    padding-top: 3vh;
   }
   #landingPageSc #hora {
     margin-left: 10vw;

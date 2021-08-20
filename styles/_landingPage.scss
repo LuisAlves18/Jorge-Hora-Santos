@@ -1,101 +1,109 @@
 @import "../styles/mediaQueries";
-
 $landingPageBck: url(../ASSETS/trator.webp);
 @mixin landingPageStyles {
-  background-image: $landingPageBck;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  width: 100vw;
+    background-image: $landingPageBck;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
 }
+
 #landingPageSc {
-  @include landingPageStyles();
+    @include landingPageStyles();
 }
+
 @mixin fontClr {
-  font-size: calc(500% + 1vw + 1vh);
-  color: white;
+    font-size: calc(500% + 1vw + 1vh);
+    color: white;
 }
+
 #jorge,
 #hora,
 #santos {
-  @include fontClr();
+    @include fontClr();
 }
+
 #servicos,
 #agricolas {
-  @include fontClr();
-  font-size: calc(400% + 1vw + 1vh);
+    @include fontClr();
+    font-size: calc(400% + 1vw + 1vh);
 }
 
 @include respond-below(sm) {
-  #landingPageSc {
-    font-size: 10px;
-    padding-top: 15vh;
-    padding-left: 10vw;
-    font-size: 10px;
-    @include landingPageStyles;
-    #servicos {
-      margin-top: 5vh;
+    #landingPageSc {
+        font-size: 10px;
+        padding-top: 15vh;
+        padding-left: 10vw;
+        font-size: 10px;
+        @include landingPageStyles;
+        #servicos {
+            margin-top: 5vh;
+        }
     }
-  }
 }
+
 @include respond-above(sm) {
-  #landingPageSc {
-    font-size: 14px;
-    @include landingPageStyles();
-    padding-left:10vw;
-    #jorge{
-      padding-top: 10vh;
+    #landingPageSc {
+        font-size: 14px;
+        @include landingPageStyles();
+        padding-left: 10vw;
+        #jorge {
+            padding-top: 10vh;
+        }
     }
-  }
 }
+
 @include respond-above(md) {
-  #landingPageSc {
-    padding-top: 15vh;
-    padding-left: 5vw;
-    @include landingPageStyles;
-    #servicos {
-      text-align: end;
-      margin-top: 5vh;
-      margin-right: 10vw;
+    #landingPageSc {
+        padding-top: 15vh;
+        padding-left: 5vw;
+        @include landingPageStyles;
+        #servicos {
+            text-align: end;
+            margin-top: 5vh;
+            margin-right: 10vw;
+        }
+        #agricolas {
+            margin-right: 4vw;
+            text-align: end;
+        }
     }
-    #agricolas {
-      margin-right: 4vw;
-      text-align: end;
-    }
-  }
 }
+
 @include respond-above(lg) {
-  #landingPageSc {
-    @include landingPageStyles;
-  }
-  #hora {
-    margin-left: 11vw;
-  }
-  #santos {
-    margin-left: 18vw;
-  }
-  #servicos {
-    margin-right: 20vw;
-  }
-  #agricolas {
-    margin-right: 6vw;
-  }
-}
-@include respond-above(xl) {
-  #landingPageSc {
-    @include landingPageStyles;
+    #landingPageSc {
+        @include landingPageStyles;
+    }
     #hora {
-      margin-left: 10vw;
+        margin-left: 11vw;
     }
     #santos {
-      margin-left: 16vw;
+        margin-left: 18vw;
     }
     #servicos {
-      margin-right: 22vw;
+        margin-right: 20vw;
     }
     #agricolas {
-      margin-right: 9vw;
+        margin-right: 6vw;
     }
-  }
+}
+
+@include respond-above(xl) {
+    #landingPageSc {
+        @include landingPageStyles;
+        padding-top: 3vh;
+        #hora {
+            margin-left: 10vw;
+        }
+        #santos {
+            margin-left: 16vw;
+        }
+        #servicos {
+            margin-right: 22vw;
+        }
+        #agricolas {
+            margin-right: 9vw;
+        }
+    }
 }
