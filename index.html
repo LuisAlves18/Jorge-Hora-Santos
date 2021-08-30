@@ -1,96 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
     <!-- Animated.css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="./styles/styles.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <nav class="navbar navbar-expand-md fixed-top navbar-transparent">
-            <a class="navbar-brand" href="#landingPageSc">
-                <img src="ASSETS/logo.jpeg" width="60" height="50" alt="" />
-            </a>
+      <nav class="navbar navbar-expand-lg fixed-top navbar-transparent">
+        <a class="navbar-brand" href="#landingPageSc">
+          <img src="ASSETS/logo.jpeg" width="60" height="50" alt="" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"
+            ><span class="icon-bar"></span
+          ></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <div class="navbar-nav">
+            <a
+              class="nav-item nav-link active"
+              type="button"
+              id="navContactBtn"
+              href="#contactsSc"
+              >CONTACTE-NOS</a
+            >
+            <a class="nav-item nav-item1 nav-link mx-5" href="#aboutUsSc"
+              >Sobre Nós</a
+            >
+            <a class="nav-item nav-item1 nav-link mx-5" href="#teamSc"
+              >Equipa</a
+            >
+            <a class="nav-item nav-item1 nav-link mx-5" href="#servicesSc"
+              >Serviços</a
+            >
+          </div>
+        </div>
+      </nav>
 
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-item nav-link active" type="button" id="navContactBtn" href="#contactsSc">CONTACTE-NOS</a>
-                    <a class="nav-item nav-item1 nav-link mx-5" href="#aboutUsSc">Sobre Nós</a>
-                    <a class="nav-item nav-item1 nav-link mx-5" href="#teamSc">Equipa</a>
-                    <a class="nav-item  nav-item1 nav-link mx-5" href="#servicesSc">Serviços</a>
-                </div>
+      <section id="landingPageSc">
+        <h1 id="jorge" class="animate__animated animate__backInLeft">JORGE</h1>
+        <h1 id="hora" class="animate__animated animate__backInLeft">HORA</h1>
+        <h1 id="santos" class="animate__animated animate__backInLeft">
+          SANTOS
+        </h1>
+        <h4 id="servicos" class="animate__animated animate__backInRight">
+          SERVIÇOS
+        </h4>
+        <h4 id="agricolas" class="animate__animated animate__backInRight">
+          AGRICOLAS
+        </h4>
+      </section>
+
+      <section id="aboutUsSc">
+        <h1>ABOUT US</h1>
+      </section>
+
+      <section id="teamSc">
+        <div class="row" id="team">
+          <div class="col-6 col-md-4" id="team1">
+            <div class="row teamImg">
+              <img src="/ASSETS/Grupo 10.png" alt="" />
             </div>
-        </nav>
-
-        <section id="landingPageSc">
-            <h1 id="jorge" class="animate__animated animate__backInLeft">JORGE</h1>
-            <h1 id="hora" class="animate__animated animate__backInLeft">HORA</h1>
-            <h1 id="santos" class="animate__animated animate__backInLeft">
-                SANTOS
-            </h1>
-            <h4 id="servicos" class="animate__animated animate__backInRight">
-                SERVIÇOS
-            </h4>
-            <h4 id="agricolas" class="animate__animated animate__backInRight">
-                AGRICOLAS
-            </h4>
-        </section>
-
-        <section id="aboutUsSc">
-            <h1>ABOUT US</h1>
-        </section>
-
-        <section id="teamSc">
-            <div class="row" id="team">
-                <div class=" col-6 col-md-4 " id="team1">
-                    <div class="row teamImg">
-                        <img src="/ASSETS/Grupo 10.png" alt="" />
-                    </div>
-                    <div class="row cargo justify-content-center">
-                        <p>CARGO</p>
-                    </div>
-                </div>
-                <div class="col-6 col-md-4 " id="team2">
-                    <div class="row teamImg">
-                        <img src="/ASSETS/Grupo 10.png" alt="" />
-                    </div>
-                    <div class="row cargo justify-content-center">
-                        <p>CARGO</p>
-                    </div>
-                </div>
-                <div class=" col-6 col-md-12 " id="team3">
-                    <div class="row teamImg">
-                        <img src="/ASSETS/Grupo 10.png" alt="" />
-                    </div>
-                    <div class="row cargo justify-content-center">
-                        <p>CARGO</p>
-                    </div>
-                </div>
+            <div class="row cargo justify-content-center">
+              <p>CARGO</p>
             </div>
-        </section>
+          </div>
+          <div class="col-6 col-md-4" id="team2">
+            <div class="row teamImg">
+              <img src="/ASSETS/Grupo 10.png" alt="" />
+            </div>
+            <div class="row cargo justify-content-center">
+              <p>CARGO</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-12" id="team3">
+            <div class="row teamImg">
+              <img src="/ASSETS/Grupo 10.png" alt="" />
+            </div>
+            <div class="row cargo justify-content-center">
+              <p>CARGO</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <section id="servicesSc">
-            <h1>SERVIÇOS</h1>
-        </section>
+      <section id="servicesSc">
+        <h1>SERVIÇOS</h1>
+      </section>
 
-        <section id="contactsSc">
-            <h1>CONTACTOS</h1>
-        </section>
+      <section id="contactsSc">
+        <h1>CONTACTOS</h1>
+      </section>
     </div>
     <script src="index.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
