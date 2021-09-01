@@ -1,5 +1,6 @@
 /* Navbar */
 
+$nav-child:1;
 @import "../styles/mediaQueries";
 #nav-icon2 {
     width: 3vw;
@@ -109,7 +110,8 @@
 }
 
 #navContactBtn {
-    background-color: #FFC02E;
+    /* background-color: #FFC02E; */
+    font-weight: 400;
     color: white;
     box-shadow: 5px 0px 5px 5px rgba(128, 128, 128, .5);
     border-radius: 0.4rem;
@@ -124,28 +126,61 @@
     margin-bottom: 0vh;
 }
 
+@mixin navbarInd1() {
+    content: "";
+    position: absolute;
+    display: block;
+    border: 0.3vh solid #FFC02E;
+    background-color: #FFC02E;
+    width: 3vw;
+    height: 0;
+    transition: all 0.5s ease;
+    top: 75%;
+}
+
+@mixin navBarInd2() {
+    color: white;
+    width: 5vw;
+    top: 25%;
+}
+
 @mixin navbarAnimation() {
-    .nav-item1::after {
-        content: "";
-        position: absolute;
-        display: block;
-        border: 0.3vh solid #FFC02E;
-        background-color: #FFC02E;
-        width: 3vw;
-        height: 0;
-        transition: all 0.5s ease;
-        top: 75%;
+    .nav-item1:nth-child(2) {
+        &::after {
+            @include navbarInd1();
+            width: 5.5vw;
+        }
+        &.nav-item1:nth-child(2):hover::after {
+            @include navBarInd2();
+            width: 5.5vw;
+        }
     }
-    .nav-item1:hover::after {
-        color: white;
-        width: 5vw;
-        top: 25%;
+    .nav-item1:nth-child(3) {
+        &::after {
+            @include navbarInd1();
+            width: 3.5vw;
+        }
+        &.nav-item1:nth-child(3):hover::after {
+            @include navBarInd2();
+            width: 3.5vw;
+        }
+    }
+    .nav-item1:nth-child(4) {
+        &::after {
+            @include navbarInd1();
+            width: 4.3vw;
+        }
+        &.nav-item1:nth-child(4):hover::after {
+            @include navBarInd2();
+            width: 4.3vw;
+        }
     }
 }
 
 @include respond-above(lg) {
     #navContactBtn {
-        background-color: #FFC02E;
+        /* background-color: #FFC02E; */
+        font-weight: 400;
         color: white;
         box-shadow: 5px 0px 5px 5px rgba(128, 128, 128, .5);
         border-radius: 0.4rem;
@@ -156,7 +191,8 @@
 
 @include respond-above(xl) {
     #navContactBtn {
-        background-color: #FFC02E;
+        /* background-color: #FFC02E; */
+        font-weight: 400;
         color: white;
         box-shadow: 5px 0px 5px 5px rgba(128, 128, 128, .5);
         border-radius: 0.4rem;
