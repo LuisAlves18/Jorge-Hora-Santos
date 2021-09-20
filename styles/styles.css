@@ -37,8 +37,8 @@
   margin-right: 2vw;
   -webkit-transform: rotate(0deg);
   transform: rotate(0deg);
-  -webkit-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
   cursor: pointer;
 }
 
@@ -53,8 +53,8 @@
   left: 0;
   -webkit-transform: rotate(0deg);
   transform: rotate(0deg);
-  -webkit-transition: .25s ease-in-out;
-  transition: .25s ease-in-out;
+  -webkit-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
 }
 
 #nav-icon2 span:nth-child(even) {
@@ -144,134 +144,140 @@
 }
 
 @media (min-width: 992px) {
-  #navContactBtn {
-    /* background-color: #FFC02E; */
-    font-weight: 400;
-    color: white;
-    -webkit-box-shadow: 5px 0px 5px 5px rgba(128, 128, 128, 0.5);
-            box-shadow: 5px 0px 5px 5px rgba(128, 128, 128, 0.5);
-    border-radius: 0.4rem;
-    margin-left: 20vw;
+  .nav-item1:nth-child(3) {
+    border: none;
+    position: relative;
   }
-  .nav-item1:nth-child(4)::after {
+  .nav-item1:nth-child(3)::after {
     content: "";
     position: absolute;
-    display: block;
-    border: 0.3vh solid #FFC02E;
-    background-color: #FFC02E;
-    width: 3vw;
-    height: 0;
-    -webkit-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-    top: 75%;
+    width: 0px;
+    height: 5px;
+    left: 50%;
+    bottom: 0;
+    background-color: white;
+    -webkit-transition: all ease-in-out 0.2s;
+    transition: all ease-in-out 0.2s;
     width: 5.5vw;
   }
-  .nav-item1:nth-child(4).nav-item1:nth-child(4):hover::after {
+  .nav-item1:nth-child(3).nav-item1:nth-child(3):hover::after {
     color: white;
-    width: 5vw;
-    top: 25%;
+    width: 100%;
+    left: 0;
     width: 5.5vw;
   }
-  .nav-item1:nth-child(5)::after {
+  .nav-item1:nth-child(3) .nav-item1:nth-child(4) {
+    border: none;
+    position: relative;
+  }
+  .nav-item1:nth-child(3) .nav-item1:nth-child(4)::after {
     content: "";
     position: absolute;
-    display: block;
-    border: 0.3vh solid #FFC02E;
-    background-color: #FFC02E;
-    width: 3vw;
-    height: 0;
-    -webkit-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-    top: 75%;
-    width: 3.5vw;
+    width: 0px;
+    height: 5px;
+    left: 50%;
+    bottom: 0;
+    background-color: white;
+    -webkit-transition: all ease-in-out 0.2s;
+    transition: all ease-in-out 0.2s;
+    width: 5.5vw;
   }
-  .nav-item1:nth-child(5).nav-item1:nth-child(5):hover::after {
+  .nav-item1:nth-child(3) .nav-item1:nth-child(4).nav-item1:nth-child(4):hover::after {
     color: white;
-    width: 5vw;
-    top: 25%;
-    width: 3.5vw;
+    width: 100%;
+    left: 0;
+    width: 5.5vw;
   }
-  .nav-item1:nth-child(6)::after {
+  .nav-item1:nth-child(3) .nav-item1:nth-child(6) {
+    border: none;
+    position: relative;
+  }
+  .nav-item1:nth-child(3) .nav-item1:nth-child(6)::after {
     content: "";
     position: absolute;
-    display: block;
-    border: 0.3vh solid #FFC02E;
-    background-color: #FFC02E;
-    width: 3vw;
-    height: 0;
-    -webkit-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-    top: 75%;
-    width: 4.3vw;
+    width: 0px;
+    height: 5px;
+    left: 50%;
+    bottom: 0;
+    background-color: white;
+    -webkit-transition: all ease-in-out 0.2s;
+    transition: all ease-in-out 0.2s;
+    width: 5.5vw;
   }
-  .nav-item1:nth-child(6).nav-item1:nth-child(6):hover::after {
+  .nav-item1:nth-child(3) .nav-item1:nth-child(6).nav-item1:nth-child(6):hover::after {
     color: white;
-    width: 5vw;
-    top: 25%;
-    width: 4.3vw;
+    width: 100%;
+    left: 0;
+    width: 5.5vw;
   }
 }
 
 @media (min-width: 1200px) {
-  .nav-item1:nth-child(4)::after {
-    content: "";
-    position: absolute;
-    display: block;
-    border: 0.3vh solid #FFC02E;
-    background-color: #FFC02E;
-    width: 3vw;
-    height: 0;
-    -webkit-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-    top: 75%;
-    width: 5.5vw;
-  }
-  .nav-item1:nth-child(4).nav-item1:nth-child(4):hover::after {
-    color: white;
-    width: 5vw;
-    top: 25%;
-    width: 5.5vw;
-  }
-  .nav-item1:nth-child(5)::after {
-    content: "";
-    position: absolute;
-    display: block;
-    border: 0.3vh solid #FFC02E;
-    background-color: #FFC02E;
-    width: 3vw;
-    height: 0;
-    -webkit-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-    top: 75%;
-    width: 3.5vw;
-  }
-  .nav-item1:nth-child(5).nav-item1:nth-child(5):hover::after {
-    color: white;
-    width: 5vw;
-    top: 25%;
-    width: 3.5vw;
-  }
-  .nav-item1:nth-child(6)::after {
-    content: "";
-    position: absolute;
-    display: block;
-    border: 0.3vh solid #FFC02E;
-    background-color: #FFC02E;
-    width: 3vw;
-    height: 0;
-    -webkit-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-    top: 75%;
-    width: 4.3vw;
-  }
-  .nav-item1:nth-child(6).nav-item1:nth-child(6):hover::after {
-    color: white;
-    width: 5vw;
-    top: 25%;
-    width: 4.3vw;
-  }
   .nav-item1:nth-child(3) {
-    padding-left: 40vw;
+    border: none;
+    position: relative;
+  }
+  .nav-item1:nth-child(3)::after {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 5px;
+    left: 50%;
+    bottom: 0;
+    background-color: white;
+    -webkit-transition: all ease-in-out 0.2s;
+    transition: all ease-in-out 0.2s;
+    width: 5.5vw;
+  }
+  .nav-item1:nth-child(3).nav-item1:nth-child(3):hover::after {
+    color: white;
+    width: 100%;
+    left: 0;
+    width: 5.5vw;
+  }
+  .nav-item1:nth-child(3) .nav-item1:nth-child(4) {
+    border: none;
+    position: relative;
+  }
+  .nav-item1:nth-child(3) .nav-item1:nth-child(4)::after {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 5px;
+    left: 50%;
+    bottom: 0;
+    background-color: white;
+    -webkit-transition: all ease-in-out 0.2s;
+    transition: all ease-in-out 0.2s;
+    width: 5.5vw;
+  }
+  .nav-item1:nth-child(3) .nav-item1:nth-child(4).nav-item1:nth-child(4):hover::after {
+    color: white;
+    width: 100%;
+    left: 0;
+    width: 5.5vw;
+  }
+  .nav-item1:nth-child(3) .nav-item1:nth-child(6) {
+    border: none;
+    position: relative;
+  }
+  .nav-item1:nth-child(3) .nav-item1:nth-child(6)::after {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 5px;
+    left: 50%;
+    bottom: 0;
+    background-color: white;
+    -webkit-transition: all ease-in-out 0.2s;
+    transition: all ease-in-out 0.2s;
+    width: 5.5vw;
+  }
+  .nav-item1:nth-child(3) .nav-item1:nth-child(6).nav-item1:nth-child(6):hover::after {
+    color: white;
+    width: 100%;
+    left: 0;
+    width: 5.5vw;
   }
 }
 
