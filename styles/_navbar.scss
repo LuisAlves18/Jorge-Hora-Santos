@@ -145,32 +145,33 @@ $nav-child:1;
 }
 
 @mixin navbarAnimation() {
-    .nav-item1:nth-child(2) {
-        &::after {
-            @include navbarInd1();
-            width: 5.5vw;
-        }
-        &.nav-item1:nth-child(2):hover::after {
-            @include navBarInd2();
-            width: 5.5vw;
-        }
-    }
-    .nav-item1:nth-child(3) {
-        &::after {
-            @include navbarInd1();
-            width: 3.5vw;
-        }
-        &.nav-item1:nth-child(3):hover::after {
-            @include navBarInd2();
-            width: 3.5vw;
-        }
-    }
     .nav-item1:nth-child(4) {
+       
+        &::after {
+            @include navbarInd1();
+            width: 5.5vw;
+        }
+        &.nav-item1:nth-child(4):hover::after {
+            @include navBarInd2();
+            width: 5.5vw;
+        }
+    }
+    .nav-item1:nth-child(5) {
+        &::after {
+            @include navbarInd1();
+            width: 3.5vw;
+        }
+        &.nav-item1:nth-child(5):hover::after {
+            @include navBarInd2();
+            width: 3.5vw;
+        }
+    }
+    .nav-item1:nth-child(6) {
         &::after {
             @include navbarInd1();
             width: 4.3vw;
         }
-        &.nav-item1:nth-child(4):hover::after {
+        &.nav-item1:nth-child(6):hover::after {
             @include navBarInd2();
             width: 4.3vw;
         }
@@ -190,15 +191,8 @@ $nav-child:1;
 }
 
 @include respond-above(xl) {
-    #navContactBtn {
-        /* background-color: #FFC02E; */
-        font-weight: 400;
-        color: white;
-        box-shadow: 5px 0px 5px 5px rgba(128, 128, 128, .5);
-        border-radius: 0.4rem;
-        margin: 0;
-        margin-left: 43vw;
-        height: 7vh;
-    }
     @include navbarAnimation();
+    .nav-item1:nth-child(3){
+        padding-left:40vw;
+    }
 }

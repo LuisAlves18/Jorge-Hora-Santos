@@ -6,6 +6,9 @@ $aboutUsBck: url(../ASSETS/scott-goodwill-CtRE4_4L7b8-unsplash.jpg);
     height: 100vh;
     width: 100vw;
 }
+h1,p{
+    color:white
+}
 #aboutUsSc {
        @include aboutUsStyles(); 
 }
