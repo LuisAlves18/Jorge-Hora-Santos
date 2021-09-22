@@ -130,17 +130,25 @@ $nav-child: 1;
   content: "";
   position: absolute;
   width: 0px;
-  height: 5px;
+  height: 3px;
   left: 50%;
   bottom: 0;
   background-color: white;
-  transition: all ease-in-out 0.2s;
+  
 }
 
 @mixin navBarInd2() {
   color: white;
   width: 100%;
   left: 0;
+}
+@keyframes scale-up-hor-center {
+  0% {
+    transform: scaleX(0.4);
+  }
+  75% {
+    transform: scaleX(1);
+  }
 }
 
 @mixin navbarAnimation() {
@@ -149,22 +157,41 @@ $nav-child: 1;
     position: relative;
     &::after {
       @include navbarInd1();
-      width: 5.5vw;
+      //idth: 5.5vw;
     }
     &.nav-item1:nth-child(3):hover::after {
       @include navBarInd2();
-      width: 5.5vw;
+      animation: scale-up-hor-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) ;
+      //width: 5.5vw;
     }
+  }
     .nav-item1:nth-child(4) {
       border: none;
       position: relative;
       &::after {
         @include navbarInd1();
-        width: 5.5vw;
+        //width: 5.5vw;
       }
       &.nav-item1:nth-child(4):hover::after {
         @include navBarInd2();
-        width: 5.5vw;
+      animation: scale-up-hor-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) ;
+
+        //width: 5.5vw;
+      }
+    }
+    .nav-item1:nth-child(5) {
+      border: none;
+      position: relative;
+      &::after {
+        @include navbarInd1();
+        
+        //width: 5.5vw;
+      }
+      &.nav-item1:nth-child(5):hover::after {
+      animation: scale-up-hor-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) ;
+
+        @include navBarInd2();
+        //width: 5.5vw;
       }
     }
     .nav-item1:nth-child(6) {
@@ -172,14 +199,17 @@ $nav-child: 1;
       position: relative;
       &::after {
         @include navbarInd1();
-        width: 5.5vw;
+        
+        //width: 5.5vw;
       }
       &.nav-item1:nth-child(6):hover::after {
+      animation: scale-up-hor-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) ;
+
         @include navBarInd2();
-        width: 5.5vw;
+        //width: 5.5vw;
       }
     }
-  }
+  
 }
 
 @include respond-above(lg) {

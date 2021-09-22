@@ -143,6 +143,28 @@
   color: white;
 }
 
+@-webkit-keyframes scale-up-hor-center {
+  0% {
+    -webkit-transform: scaleX(0.4);
+            transform: scaleX(0.4);
+  }
+  75% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+}
+
+@keyframes scale-up-hor-center {
+  0% {
+    -webkit-transform: scaleX(0.4);
+            transform: scaleX(0.4);
+  }
+  75% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+}
+
 @media (min-width: 992px) {
   .nav-item1:nth-child(3) {
     border: none;
@@ -152,63 +174,77 @@
     content: "";
     position: absolute;
     width: 0px;
-    height: 5px;
+    height: 3px;
     left: 50%;
     bottom: 0;
     background-color: white;
-    -webkit-transition: all ease-in-out 0.2s;
-    transition: all ease-in-out 0.2s;
-    width: 5.5vw;
   }
   .nav-item1:nth-child(3).nav-item1:nth-child(3):hover::after {
     color: white;
     width: 100%;
     left: 0;
-    width: 5.5vw;
+    -webkit-animation: scale-up-hor-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1);
+            animation: scale-up-hor-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1);
   }
-  .nav-item1:nth-child(3) .nav-item1:nth-child(4) {
+  .nav-item1:nth-child(4) {
     border: none;
     position: relative;
   }
-  .nav-item1:nth-child(3) .nav-item1:nth-child(4)::after {
+  .nav-item1:nth-child(4)::after {
     content: "";
     position: absolute;
     width: 0px;
-    height: 5px;
+    height: 3px;
     left: 50%;
     bottom: 0;
     background-color: white;
-    -webkit-transition: all ease-in-out 0.2s;
-    transition: all ease-in-out 0.2s;
-    width: 5.5vw;
   }
-  .nav-item1:nth-child(3) .nav-item1:nth-child(4).nav-item1:nth-child(4):hover::after {
+  .nav-item1:nth-child(4).nav-item1:nth-child(4):hover::after {
     color: white;
     width: 100%;
     left: 0;
-    width: 5.5vw;
+    -webkit-animation: scale-up-hor-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1);
+            animation: scale-up-hor-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1);
   }
-  .nav-item1:nth-child(3) .nav-item1:nth-child(6) {
+  .nav-item1:nth-child(5) {
     border: none;
     position: relative;
   }
-  .nav-item1:nth-child(3) .nav-item1:nth-child(6)::after {
+  .nav-item1:nth-child(5)::after {
     content: "";
     position: absolute;
     width: 0px;
-    height: 5px;
+    height: 3px;
     left: 50%;
     bottom: 0;
     background-color: white;
-    -webkit-transition: all ease-in-out 0.2s;
-    transition: all ease-in-out 0.2s;
-    width: 5.5vw;
   }
-  .nav-item1:nth-child(3) .nav-item1:nth-child(6).nav-item1:nth-child(6):hover::after {
+  .nav-item1:nth-child(5).nav-item1:nth-child(5):hover::after {
+    -webkit-animation: scale-up-hor-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1);
+            animation: scale-up-hor-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1);
     color: white;
     width: 100%;
     left: 0;
-    width: 5.5vw;
+  }
+  .nav-item1:nth-child(6) {
+    border: none;
+    position: relative;
+  }
+  .nav-item1:nth-child(6)::after {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 3px;
+    left: 50%;
+    bottom: 0;
+    background-color: white;
+  }
+  .nav-item1:nth-child(6).nav-item1:nth-child(6):hover::after {
+    -webkit-animation: scale-up-hor-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1);
+            animation: scale-up-hor-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1);
+    color: white;
+    width: 100%;
+    left: 0;
   }
 }
 
@@ -221,63 +257,77 @@
     content: "";
     position: absolute;
     width: 0px;
-    height: 5px;
+    height: 3px;
     left: 50%;
     bottom: 0;
     background-color: white;
-    -webkit-transition: all ease-in-out 0.2s;
-    transition: all ease-in-out 0.2s;
-    width: 5.5vw;
   }
   .nav-item1:nth-child(3).nav-item1:nth-child(3):hover::after {
     color: white;
     width: 100%;
     left: 0;
-    width: 5.5vw;
+    -webkit-animation: scale-up-hor-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1);
+            animation: scale-up-hor-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1);
   }
-  .nav-item1:nth-child(3) .nav-item1:nth-child(4) {
+  .nav-item1:nth-child(4) {
     border: none;
     position: relative;
   }
-  .nav-item1:nth-child(3) .nav-item1:nth-child(4)::after {
+  .nav-item1:nth-child(4)::after {
     content: "";
     position: absolute;
     width: 0px;
-    height: 5px;
+    height: 3px;
     left: 50%;
     bottom: 0;
     background-color: white;
-    -webkit-transition: all ease-in-out 0.2s;
-    transition: all ease-in-out 0.2s;
-    width: 5.5vw;
   }
-  .nav-item1:nth-child(3) .nav-item1:nth-child(4).nav-item1:nth-child(4):hover::after {
+  .nav-item1:nth-child(4).nav-item1:nth-child(4):hover::after {
     color: white;
     width: 100%;
     left: 0;
-    width: 5.5vw;
+    -webkit-animation: scale-up-hor-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1);
+            animation: scale-up-hor-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1);
   }
-  .nav-item1:nth-child(3) .nav-item1:nth-child(6) {
+  .nav-item1:nth-child(5) {
     border: none;
     position: relative;
   }
-  .nav-item1:nth-child(3) .nav-item1:nth-child(6)::after {
+  .nav-item1:nth-child(5)::after {
     content: "";
     position: absolute;
     width: 0px;
-    height: 5px;
+    height: 3px;
     left: 50%;
     bottom: 0;
     background-color: white;
-    -webkit-transition: all ease-in-out 0.2s;
-    transition: all ease-in-out 0.2s;
-    width: 5.5vw;
   }
-  .nav-item1:nth-child(3) .nav-item1:nth-child(6).nav-item1:nth-child(6):hover::after {
+  .nav-item1:nth-child(5).nav-item1:nth-child(5):hover::after {
+    -webkit-animation: scale-up-hor-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1);
+            animation: scale-up-hor-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1);
     color: white;
     width: 100%;
     left: 0;
-    width: 5.5vw;
+  }
+  .nav-item1:nth-child(6) {
+    border: none;
+    position: relative;
+  }
+  .nav-item1:nth-child(6)::after {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 3px;
+    left: 50%;
+    bottom: 0;
+    background-color: white;
+  }
+  .nav-item1:nth-child(6).nav-item1:nth-child(6):hover::after {
+    -webkit-animation: scale-up-hor-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1);
+            animation: scale-up-hor-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1);
+    color: white;
+    width: 100%;
+    left: 0;
   }
 }
 
